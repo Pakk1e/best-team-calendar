@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Team Calendar - Work Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calendar.js" defer></script>
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <h2>Best Team Calendar</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="calendar.html" class="active">Work Calendar</a>
+                <a href="parking.html">Parking Reservation</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="calendar-header">
+                <button id="prevMonth">&lt;</button>
+                <h1 id="monthYear">Month Year</h1>
+                <button id="nextMonth">&gt;</button>
+            </div>
+
+            <div class="calendar-wrapper">
+                <div class="calendar-grid" id="calendarGrid"></div>
+                <div id="eventLegend" class="legend"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Event popup modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h3>Select Event Type</h3>
+            <select id="eventType">
+                <option value="Vacation">Vacation</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Office">Office</option>
+                <option value="Home Office">Home Office</option>
+                <option value="Weekend">Weekend</option>
+                <option value="Public Holiday">Public Holiday</option>
+                <option value="Fruit Day">Fruit Day</option>
+                <option value="Have Lunch">Have Lunch</option>
+            </select>
+            <button id="saveEvent">Save</button>
+        </div>
+    </div>
+</body>
+
+</html>

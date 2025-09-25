@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Team Calendar - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>Best Team Calendar</h2>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="calendar.html">Work Calendar</a>
+        <a href="parking.html">Parking Reservation</a>
+      </nav>
+    </aside>
 
+    <main class="content">
+      <h1>Welcome to Best Team Calendar</h1>
+      <p>
+        The Best Team Calendar is a lightweight and user-friendly web application
+        designed to help GCOE teams efficiently manage and visualize their work schedules.
+      </p>
+      <p>
+        Additionally, it includes a dedicated Parking Reservation page,
+        allowing team members to book parking spots in advance.
+      </p>
+
+      <section class="user-section">
+        <h2>Select or Add Your Name</h2>
+
+        <!-- Dropdown for existing users -->
+        <label for="userSelect">Choose your name:</label>
+        <select id="userSelect">
+          <option value="" disabled selected>-- Select a name --</option>
+        </select>
+        <button id="selectUserBtn">Continue</button>
+
+        <hr>
+
+        <!-- Add new user -->
+        <label for="newUser">Add new name:</label>
+        <input type="text" id="newUser" placeholder="Enter your name">
+        <button id="addUserBtn">Add</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
